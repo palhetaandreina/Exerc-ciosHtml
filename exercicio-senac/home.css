@@ -1,0 +1,79 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+header {
+	padding: 8px;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	justify-content: center;
+	flex-direction: column;
+	padding: 16px;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+ul > li {
+	display: inline;
+}
+
+ul > li > a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 8px;
+}
+
+ul > li > a {
+	border-radius: 32px;
+	color: black;
+	background-color: rgb(197, 194, 194);
+}
+
+footer > nav > ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer > nav#navegacao-rede-social {
+	width: 300px;
+	margin: auto;
+}
+
+div.icone-rede-social > img {
+	width: 32px;
+	height: 32px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+#main-inscricao {
+	justify-content: flex-start;
+}
