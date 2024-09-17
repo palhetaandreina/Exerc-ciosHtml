@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midia em HTML5</title>
+</head>
+<body>
+  <h1>Imagens dinâmicas</h1>
+  <p>Tente abrir este site em varios dispositivos diferentes
+    ou tente aumentar o tamanho do seu navegador
+  </p>
+
+  <picture>
+    <source media="(max-width: 750px )" srcset="IMAGENS/IMGP.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="IMAGENS/IMGM.png" type="image/png">
+    <img src="IMAGENS/IMGG.png" alt="imagem flexivel">
+  </picture>
+
+  <h1>Reproduzindo audios</h1>
+  <p>Vamos aprender a utilizar audios em HTML5</p>
+  <audio preload="auto" autoplay controls loop>
+    <source src="midia/Bigskyelegant.mp3" type="audio/mpeg">
+    <source src="midia/Bigskyelegant.ogg" type="audio/ogg">
+    <source src="midia/Bigskyelegant.wav" type="audio/wav">  </audio>  
+    <p>Infelizmente seu navegador nao consegue reproduzir audio mp3
+    <a href="midia/Bigskyelegant.mp3"> Clique aqui para baixar o arquivo MP3</a>
+    </p>
+</body>
+</html>

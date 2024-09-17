@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 body {
+	font-family: 'Inria Sans', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-content: stretch;
@@ -11,6 +14,10 @@ header {
 	padding: 8px;
 }
 
+header > h1 {
+	margin-top: 100px;
+}
+
 main {
 	display: flex;
 	align-items: center;
@@ -18,6 +25,10 @@ main {
 	justify-content: center;
 	flex-direction: column;
 	padding: 16px;
+}
+
+main.flex-start {
+	justify-content: flex-start;
 }
 
 h1,
@@ -76,4 +87,38 @@ form {
 
 #main-inscricao {
 	justify-content: flex-start;
+}
+p {
+	margin-bottom: 2px;
+	text-align: center;
+	justify-content: center;
+}
+
+.imagens {
+	border-radius: 50%;
+	max-width: 100%;
+	height: 130px;
+	width: 130px;
+}
+.imagens-alinhar {
+	display: flex;
+	justify-content: space-around;
+	height: auto;
+	gap: 16px;
+}
+figure {
+	margin: 4px;
+}
+
+figcaption {
+	text-align: center;
+}
+
+details {
+	width: 150px;
+}
+
+p#texto {
+	padding-left: 200px;
+	padding-right: 200px;
 }
