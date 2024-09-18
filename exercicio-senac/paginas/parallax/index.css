@@ -1,0 +1,119 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+}
+
+header {
+	padding: 8px;
+	background-color: #282e34;
+	/* background-image: linear-gradient(to right, #420833, #62215d, #8241ab); */
+	top: 0;
+	width: calc(100% - 16px);
+	position: fixed;
+	z-index: 999;
+}
+
+footer {
+	background-image: linear-gradient(to right, #8241ab, #62215d, #420833);
+	margin: 0;
+	padding: 8px;
+}
+
+.logo {
+	width: auto;
+	margin: 0;
+	padding-left: 110px;
+}
+
+ul {
+	font-size: 14px;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+ul > li {
+	display: inline;
+}
+
+ul > li > a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 8px;
+	width: 100px;
+}
+
+ul > li > a {
+	border-radius: 32px;
+	color: rgb(255, 255, 255);
+}
+
+h3 {
+	text-align: center;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #e26d5c;
+}
+
+p {
+	text-align: center;
+}
+
+.parallax {
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img-1 {
+	background-image: url('/paginas/medium-shot-man-wearing-vr-glasses.jpg');
+	min-height: 100%;
+}
+
+.img-2 {
+	background-image: url('/paginas/parallax/img02.avif');
+	min-height: 400px;
+}
+
+.img-3 {
+	background-image: url('img-3.avif');
+	min-height: 400px;
+}
+
+.img-1,
+.img-2,
+.img-3 {
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	opacity: 0.75;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #eba6a9;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.caption span.border {
+	color: white;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
