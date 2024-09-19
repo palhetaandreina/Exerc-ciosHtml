@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Palestrantes</title>
+		<link rel="stylesheet" href="/paginas/parallax/index.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Palestrantes</h1>
+		</header>
+		<main class="flex-start">
+			<section>
+				<div class="carrossel">
+					<div class="carrossel-inner">
+						<div class="carrossel-item" id="anchor-1">
+							<figure>
+								<img src="/paginas/billgates.jpeg" alt="imagem-bill-gates" />
+							</figure>
+						</div>
+
+						<div class="carrossel-item" id="anchor-2">
+							<figure>
+								<img src="/paginas/parallax/img-01.avif" alt="imagem-bill-gates" />
+							</figure>
+						</div>
+
+						<div class="carrossel-item" id="anchor-3">
+							<figure>
+								<img src="/paginas/parallax/img-2.avif" alt="imagem-bill-gates" />
+							</figure>
+						</div>
+
+						<div class="carrossel-item" id="anchor-4">
+							<figure>
+								<img src="/paginas/parallax/img-3.avif" alt="imagem-bill-gates" />
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script>
+			const carrosselController = document.querySelector('.carrossel-inner');
+			let items = carrosselController.querySelectorAll('.carrossel-item');
+
+			let item = 0;
+
+			function atualizaCarrossel() {
+				if (item >= items.length) {
+					item = 0;
+				}
+
+				items[item].scrollIntoView({ behavior: 'smooth' });
+
+				const copy = items[item - 1];
+				carrosselController.removeChild(copy);
+				carrosselController.appendChild(copy);
+				items = carrosselController.querySelectorAll('.carrossel-item');
+				item++;
+			}
+
+			setInterval(atualizaCarrossel, 3000);
+		</script>
+	</body>
+</html>
